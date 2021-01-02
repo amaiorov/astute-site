@@ -1,4 +1,6 @@
 import React from 'react';
+import cn from 'classnames';
+
 import styles from './Header.module.scss';
 
 const Header = (props) => {
@@ -11,7 +13,7 @@ const Header = (props) => {
       <a href="#process">Process</a>
       <a href="#faq">FAQ</a>
       <a href="#test">Test</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#contact" className={ cn('button', 'light', styles.button) }>Contact Us</a>
     </header>
   );
 }

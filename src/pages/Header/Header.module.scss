@@ -1,6 +1,20 @@
+@import 'variables.scss';
+
 .wrapper {
   display: flex;
+  align-items: center;
+  color: $white;
   .logo {
     margin-right: auto;
+  }
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 32px;
+    &.button {
+      width: 180px;
+      padding: 12px 0;
+      text-transform: none;
+    }
   }
 }

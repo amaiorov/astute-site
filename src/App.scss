@@ -1,4 +1,5 @@
 @import-normalize;
+@import 'variables.scss';
 
 #root {
   min-height: 100vh;
@@ -20,15 +21,93 @@ header {
 footer {
 }
 
-
 ul, ol, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+header,
+footer {
+  background: #333;
+}
+
 section {
   border: 1px solid red;
+  &.dark {
+    background: #333;
+    color: $white;
+  }
+  &.light {
+    background: #ccc;
+    color: $black;
+  }
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  width: 300px;
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 22px;
+  border: 1px solid $white;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  transition: $ease-100;
+  &.button {
+    display: inline-block;
+    width: 250px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    &:hover {
+
+    }
+  }
+  &.light {
+    background: $white;
+    color: $black;
+    border: 2px solid $white;
+    &:hover {
+      // background: $black;
+      // color: $white;
+    }
+    &.transparent {
+      color: $white;
+    }
+  }
+  &.dark {
+    background: $black;
+    color: $white;
+    border: 2px solid $black;
+    &:hover {
+      // background: $white;
+      // color: $black;
+    }
+    &.transparent {
+      color: $black;
+    }
+  }
+  &.transparent {
+    background: transparent !important;
+  }
 }
 
 .grid {

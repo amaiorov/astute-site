@@ -1,11 +1,13 @@
 import React from 'react';
+import cn from 'classnames';
+
 import styles from './Process.module.scss';
 
 const Process = (props) => {
 
   return (
-    <section className={ styles.wrapper }>
-      <h2>Our Innovative Process</h2>
+    <section className={ cn('light', styles.wrapper) }>
+      <h1>Our Innovative Process</h1>
       <p>Our proven system utilizes an intake of Subprime consumer, identifies all reasonable vehicle finance options with lowest barriers and matches the options to proper inventory selection.</p>
       <ul>
         <li className={ styles.analysis }>

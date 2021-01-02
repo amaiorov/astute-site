@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import cn from 'classnames';
+
 import styles from './Contact.module.scss';
 
 const Contact = (props) => {
@@ -8,8 +10,8 @@ const Contact = (props) => {
   })
 
   return (
-    <section className={ styles.wrapper }>
-      <h2>Contact Us</h2>
+    <section className={ cn('light', styles.wrapper) }>
+      <h1>Contact Us</h1>
       <p>If you have any question about Astute Subprime Consulting, feel free to ask us using the form below. We will get back to you within one business day.</p>
       <form>
         <div className="grid">
@@ -56,6 +58,7 @@ const Contact = (props) => {
             <textarea name="inquiry" id="inquiry"></textarea>
           </div>
         </div>
+        <a href="#send" className={ cn('button', 'dark') }>Send</a>
       </form>
     </section>
   );

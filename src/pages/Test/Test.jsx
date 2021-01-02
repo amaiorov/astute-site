@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import cn from 'classnames';
+
 import styles from './Test.module.scss';
 
 const Test = (props) => {
@@ -8,8 +10,8 @@ const Test = (props) => {
   })
 
   return (
-    <section className={ styles.wrapper }>
-      <h2>What Can I Expect?</h2>
+    <section className={ cn('dark', styles.wrapper) }>
+      <h1>What Can I Expect?</h1>
       <h3>Take the Test!</h3>
       <p>Answer two simple questions to find out how much is your potential additional income and how Astute Subprime Lending can help your business.</p>
       <ul>
@@ -19,13 +21,13 @@ const Test = (props) => {
           <button>10 customers</button>
           <button>15 customers</button>
           <button>20 customers</button>
-          <a href="#q2">Next</a>
+          <a href="#q2" className={ cn('button', 'light') }>Next</a>
         </li>
         <li>
           <span className={ styles.title }>Q2: Do you want help to capture half of them?</span>
           <button>Yes</button>
           <button>No</button>
-          <a href="#results">See Result</a>
+          <a href="#results" className={ cn('button', 'light') }>See Result</a>
         </li>
         <li>
           <span className={ styles.title }>Learn your possible additional income.</span>
@@ -40,7 +42,7 @@ const Test = (props) => {
             <br />
             Do you want to learn more?
           </span>
-          <a href="#contact">Contact Us</a>
+          <a href="#contact" className={ cn('button', 'light') }>Contact Us</a>
         </li>
       </ul>
 

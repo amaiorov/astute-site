@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import cn from 'classnames';
+
 import styles from './FAQ.module.scss';
 
 const FAQ = (props) => {
@@ -13,8 +15,8 @@ const FAQ = (props) => {
   }
 
   return (
-    <section className={ styles.wrapper }>
-      <h2>Frequently Asked Questions</h2>
+    <section className={ cn('light', styles.wrapper) }>
+      <h1>Frequently Asked Questions</h1>
       <dl>
         <dt>Do I need a standalone special finance department?</dt>
         <dd>No, you do not need the stand alone department to be to assist subprime consumers.</dd>
@@ -32,7 +34,7 @@ const FAQ = (props) => {
         <dd>Either you do not have a sales process to guide the consumer to the correct inventory, or the lenders to give the consumer a chance to rebuild their credit.</dd>
         <dt>Can I finance people with open or recently discharged bankruptcy?</dt>
         <dd>Yes you will be able to offer financing to consumers in chapter 7 open or discharged and chapter 13 that is confirmed by the trustee.</dd>
-        <a href="#more" onClick={ seeMore }>See More</a>
+        <a href="#more" className={ cn('button', 'dark', 'transparent') } onClick={ seeMore }>See More</a>
         <dt>What is the benefit to my organization to serve the SubPrime consumer?</dt>
         <dd>You will help the consumer while increasing your sales volume and gross. Furthermore you will develop loyalty amongst the consumer for future service and sales business.</dd>
         <dt>I heard SubPrime deals have very high bank fees?</dt>
