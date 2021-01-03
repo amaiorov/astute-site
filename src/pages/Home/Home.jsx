@@ -6,7 +6,7 @@ import styles from './Home.module.scss';
 const Home = (props) => {
 
   return (
-    <section className={ cn('dark', styles.wrapper) }>
+    <section className={ cn(styles.wrapper) }>
       <div className="content">
         <h1>Your subprime clients want to buy a car.</h1>
         <h1>You provide them with the perfect solution.</h1>

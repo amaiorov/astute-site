@@ -6,9 +6,9 @@ import styles from './About.module.scss';
 const About = (props) => {
 
   return (
-    <section className={ cn('light', styles.wrapper) }>
-      <div className="content">
-        <section className={ styles.about}>
+    <>
+      <section className={ cn(styles.wrapper, styles.about) }>
+        <div className="content">
           <h1>We are <u>Astute Subprime Consultants</u> and we help auto dealers serve the subprime consumer segment at a profit</h1>
           <p>We connect consumer and dealers with over 15 quality subprime and near-prime lenders. We train Sales, F&amp;I, and Management in the art of customer guidance, subprime deal structuring and inventory selection. We offer a proprietary real time post sales funding process to minimize funding lag-time.</p>
           <ul>
@@ -33,8 +33,10 @@ const About = (props) => {
               <span>Foster a lasting partnership and see your business goals through to the end</span>
             </li>
           </ul>
-        </section>
-        <section className={ styles.challenges }>
+        </div>
+      </section>
+      <section className={ cn(styles.wrapper, styles.challenges) }>
+        <div className="content">
           <h1>What Challenges Does Your Dealership Face?</h1>
           <ul>
             <li>We lose potential sales monthly because we are unable to accommodate subprime customers...</li>
@@ -44,9 +46,9 @@ const About = (props) => {
             <li>We do not see any significant financial benefits for our business in catering specifically to subprime customers...</li>
           </ul>
           <h1>We Can Solve Your Problems with Our Innovative Process!</h1>
-        </section>
       </div>
     </section>
+  </>
   );
 }
 

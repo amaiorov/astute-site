@@ -1,5 +1,23 @@
 @import 'variables.scss';
 
 .wrapper {
-
+  color: $white;
+  background-color: $black;
+  background-image: url('~assets/images/hero-cropped.jpg'), url('~assets/images/hero-repeat.png');
+  background-position: 100% 0, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: auto 100%, 1px 100%;
+  > div {
+    padding-top: 236px !important;
+    padding-bottom: 236px !important;
+  }
+  h1 {
+    margin-bottom: 48px;
+    &:last-of-type {
+      margin-bottom: 80px;
+    }
+  }
+  a {
+    margin-right: 32px;
+  }
 }

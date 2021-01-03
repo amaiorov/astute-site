@@ -1,0 +1,84 @@
+@import 'variables.scss';
+
+.wrapper {
+  &.about {
+    background: $black;
+    color: $white;
+    padding-bottom: 100px;
+    h1 {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    p {
+      text-align: center;
+      line-height: 33px;
+      margin-bottom: 160px;
+    }
+    u {
+      position: relative;
+      text-decoration: none;
+      z-index: 1;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -4px;
+        bottom: 8px;
+        width: calc(100% + 8px);
+        height: 8px;
+        background: $blue;
+        z-index: -1;
+      }
+    }
+    ul {
+      display: flex;
+      li {
+        padding: 50px 30px 0;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        text-align: center;
+        &.consulting {
+          background-image: url('~assets/images/icon-consulting.svg');
+        }
+        &.analysis {
+          background-image: url('~assets/images/icon-analysis-blue.svg');
+        }
+        &.training {
+          background-image: url('~assets/images/icon-training-blue.svg');
+        }
+        &.strategy {
+          background-image: url('~assets/images/icon-strategy-blue.svg');
+        }
+        &.support {
+          background-image: url('~assets/images/icon-support.svg');
+        }
+        h2 {
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          &:after {
+            content: '';
+            width: auto;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 37%;
+            right: 37%;
+          }
+        }
+        span {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  &.challenges {
+    background: $gray-bg-x-light;
+    color: $gray-text;
+  }
+}

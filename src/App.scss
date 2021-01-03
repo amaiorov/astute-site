@@ -25,6 +25,7 @@ header {
 }
 
 footer {
+  background: $black;
 }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
@@ -45,24 +46,20 @@ h2 {
 }
 b,
 strong {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 header,
 footer {
-  background: #333;
+  display: flex;
+  justify-content: center;
 }
 
 .main > section {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 32px 0;
-  > .content {
-    width: 960px;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-  }
+  // padding: 32px 0;
   &.dark {
     background: #333;
     color: $white;
@@ -70,6 +67,17 @@ footer {
   &.light {
     background: #ccc;
     color: $black;
+  }
+}
+
+.main > section,
+header,
+footer {
+  > .content {
+    width: 1320px;
+    padding: 0 16px;
+    border-left: 1px dashed $red;
+    border-right: 1px dashed $red;
   }
 }
 

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78.356" height="65.799" viewBox="0 0 78.356 65.799">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a2e9;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Orion_chart" transform="translate(1.5 1.5)">
+    <path id="analysis_red" data-name="analysis red" class="cls-1" d="M643.263,1677.592h36.423s1.658,10.038,0,15.678-4.7,10.434-7.3,12.2a87.175,87.175,0,0,1-8.59,4.573v-11.522Z" transform="translate(-605 -1652.414)"/>
+    <path id="layer2" class="cls-2" d="M39.678,52.119C18.87,52.119,2,40.874,2,27V39.559C2,53.432,18.87,64.678,39.678,64.678a51.477,51.477,0,0,0,21.351-4.425V47.694A51.493,51.493,0,0,1,39.678,52.119Z" transform="translate(-2 -1.881)"/>
+    <path id="layer2-2" data-name="layer2" class="cls-2" d="M77.356,32.119C77.356,18.247,60.486,7,39.678,7S2,18.247,2,32.119,18.87,57.237,39.678,57.237a51.493,51.493,0,0,0,21.351-4.425v-.6M39.678,32.119v0" transform="translate(-2 -7)"/>
+    <path id="layer1" class="cls-2" d="M49,47.694V60.253c9.86-4.53,16.327-12.107,16.327-20.694V27c0,8.588-6.467,16.164-16.327,20.694Z" transform="translate(10.029 -1.881)"/>
+    <path id="layer1-2" data-name="layer1" class="cls-3" d="M53.351,47.095v.6C63.211,43.164,69.678,35.588,69.678,27H32l10.047,9.456Z" transform="translate(5.678 -1.881)"/>
+  </g>
+</svg>
