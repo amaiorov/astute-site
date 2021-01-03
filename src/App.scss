@@ -1,6 +1,12 @@
 @import-normalize;
 @import 'variables.scss';
+@import url('https://use.typekit.net/cpv8rdp.css');
 
+body {
+  font-family: sweet-sans-pro, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
 #root {
   min-height: 100vh;
   display: flex;
@@ -11,7 +17,7 @@
   flex-direction: column;
   flex-grow: 1;
   height: 100%;
-  width: 960px;
+  width: 100%;
   // padding: 32px;
   margin: 0 auto;
 }
@@ -30,12 +36,16 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
 h1 {
   font-size: 40px;
   line-height: 51px;
-  font-weight: 500;
+  font-weight: 800;
 }
 h2 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 800;
+}
+b,
+strong {
+    font-weight: 800;
 }
 
 header,
@@ -43,8 +53,16 @@ footer {
   background: #333;
 }
 
-section {
-  border: 1px solid red;
+.main > section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  > .content {
+    width: 960px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
   &.dark {
     background: #333;
     color: $white;
