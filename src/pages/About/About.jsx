@@ -39,15 +39,16 @@ const About = (props) => {
         <div className="content">
           <h1>What Challenges Does Your Dealership Face?</h1>
           <ul>
-            <li>We lose potential sales monthly because we are unable to accommodate subprime customers...</li>
-            <li>We are not sure our business strategy for subprime customers us accurate...</li>
-            <li>We think subprime deals require a large down payment and have a long booking time...</li>
-            <li>Our business is small and does not have a dedicated special finance team...</li>
-            <li>We do not see any significant financial benefits for our business in catering specifically to subprime customers...</li>
+            <li><span>We lose potential sales monthly because we are unable to accommodate subprime customers...</span></li>
+            <li><span>We are not sure our business strategy for subprime customers us accurate...</span></li>
+            <li><span>We think subprime deals require a large down payment and have a long booking time...</span></li>
+            <li><span>Our business is small and does not have a dedicated special finance team...</span></li>
+            <li><span>We do not see any significant financial benefits for our business in catering specifically to subprime customers...</span></li>
           </ul>
           <h1>We Can Solve Your Problems with Our Innovative Process!</h1>
       </div>
     </section>
+    <div className={ styles.separator }></div>
   </>
   );
 }
