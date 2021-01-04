@@ -2,4 +2,47 @@
 
 .wrapper {
   background: $gray-bg-xx-light;
+  color: $gray-text;
+  padding: 100px 0;
+  h1 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  dl {
+    font-size: 22px;
+    line-height: 33px;
+    dt {
+      padding-left: 32px;
+      border-top: 1px solid $gray-bg-dark;
+      &:last-child {
+        border-bottom: 1px solid $gray-bg-dark;
+      }
+      span {
+        padding: 24px 0;
+        display: inline-block;
+        margin-bottom: -1px;
+        border-bottom: 1px solid $gray-bg-dark;
+      }
+    }
+    dd {
+      // margin-bottom: 24px;
+      // padding: 24px 0 64px 64px;
+      &.collapsed {
+        height: 0;
+        overflow: hidden;
+        transition: height 200ms ease;
+      }
+      span {
+        display: block;
+        padding: 24px 0 64px 64px;
+      }
+    }
+    a {
+      display: block;
+      margin: 0 auto;
+    }
+    .hidden {
+      display: none;
+    }
+  }
 }
