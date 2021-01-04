@@ -164,7 +164,9 @@
     background-position: 50% 30px, 50% calc(100% - 30px);
     background-size: 92px auto;
     animation: arrow 1000ms ease infinite;
+    animation-direction: alternate;
     z-index: 20;
+    transform-origin: center center;
   }
   &:after {
     content: '';
@@ -181,11 +183,13 @@
 
 @keyframes arrow {
   from {
-    background-position: 50% 10px, 50% calc(100% - 50px);
-    opacity: 0.5;
+    background-position: 50% 20px, 50% calc(100% - 40px);
+    opacity: 0.2;
+    // transform: scale(0.9);
   }
   to {
-    background-position: 50% 30px, 50% calc(100% - 30px);
+    background-position: 50% 40px, 50% calc(100% - 20px);
     opacity: 1;
+    // transform: scale(1);
   }
 }

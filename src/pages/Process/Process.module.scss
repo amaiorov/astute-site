@@ -12,28 +12,142 @@
     line-height: 33px;
     margin-bottom: 130px;
   }
-  ul.steps {
+  ol.steps {
+    counter-reset: steps;
     > li {
       background-repeat: no-repeat;
       background-size: 100px auto;
+      counter-increment: steps;
+      position: relative;
+      padding-top: 30px;
+      &:before {
+        content: counter(steps);
+        border-radius: 100%;
+        background: $gray-bg-dark;
+        color: $white;
+        z-index: 10;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        padding-top: 65px;
+        box-sizing: border-box;
+        font-size: 35px;
+      }
+      &:after {
+        content: 'step';
+        border-radius: 100%;
+        color: $white;
+        z-index: 10;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
       &:nth-child(1) {
-        padding-right: 50%;
+        padding-right: 52%;
+        padding-bottom: 200px;
         background-image: url('~assets/images/process-analysis.svg');
-        background-position: 100% 0;
-        background-size: calc(50% - 128px) auto;
+        background-position: 100% 30px;
+        background-size: 630px auto;
       }
       &:nth-child(2) {
         padding-left: 50%;
+        padding-bottom: 26  0px;
         background-image: url('~assets/images/process-training-1.svg'), url('~assets/images/process-training-2.svg'), url('~assets/images/process-training-3.svg');
-        background-position: 0 0, 100px 200px, 0px 300px;
-        background-size: calc(50% - 128px) auto, calc(25% - 128px) auto, calc(33% - 128px) auto;
+        background-position: 0 130px, 310px 680px, 50px 950px;
+        background-size: 591px auto, 326px auto, 331px auto;
       }
       &:nth-child(3) {
-        padding-right: 50%;
+        padding-right: 52%;
         background-image: url('~assets/images/process-strategy.svg');
-        background-position: 100% 0;
-        background-size: calc(50% - 128px) auto;
+        background-position: 100% 80px;
+        background-size: 602px auto;
+      }
+      .tag {
+        height: 36px;
+        padding: 0 24px;
+        background: $blue;
+        color: $white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 800;
+        margin-left: 153px;
+      }
+      .title {
+        display: block;
+        font-size: 34px;
+        font-weight: 800;
+        margin: 8px 0 62px 150px;
+      }
+      .subtitle {
+        display: block;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 33px;
+        > span {
+          display: block;
+          margin: 40px 0;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 33px;
+        }
+      }
+      .description {
+        > ul {
+          margin-left: 23px;
+          > li {
+            list-style-position: outside;
+            list-style-type: disc;
+            line-height: 33px;
+            margin-bottom: 32px;
+            > ul {
+              margin-left: 46px;
+              margin-top: 32px;
+              > li {
+                list-style-position: outside;
+                list-style-type: '―';
+                line-height: 33px;
+                margin-bottom: 32px;
+                > ul {
+                  margin-left: 69px;
+                  margin-top: 32px;
+                  > li {
+                    list-style-position: outside;
+                    list-style-type: circle;
+                    line-height: 33px;
+                    margin-bottom: 32px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
+  }
+}
+.separator {
+  position: relative;
+  height: 170px;
+  background: $gray-bg-x-light;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    border-top: 170px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 100vw solid $gray-bg-xx-light;
+    z-index: 10;
   }
 }
