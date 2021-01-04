@@ -9,8 +9,8 @@ const Process = (props) => {
     <section className={ cn(styles.wrapper) }>
       <div className="content">
         <h1>Our Innovative Process</h1>
-        <p>Our proven system utilizes an intake of Subprime consumer, identifies all reasonable vehicle finance options with lowest barriers and matches the options to proper inventory selection.</p>
-        <ul>
+        <p>Our proven system utilizes an intake of Subprime consumer,<br />identifies all reasonable vehicle finance options with lowest barriers and matches the options to proper inventory selection.</p>
+        <ul className={ styles.steps }>
           <li className={ styles.analysis }>
             <span className={ styles.tag }>Analysis</span>
             <span className={ styles.title }>Pop the Hood!</span>
