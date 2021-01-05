@@ -13,33 +13,76 @@
     line-height: 33px;
     dt {
       padding-left: 32px;
-      border-top: 1px solid $gray-bg-dark;
-      &:last-child {
-        border-bottom: 1px solid $gray-bg-dark;
+      position: relative;
+      &:first-child {
+        border-top: 1px solid $gray-bg-dark;
       }
       span {
-        padding: 24px 0;
-        display: inline-block;
-        margin-bottom: -1px;
-        border-bottom: 1px solid $gray-bg-dark;
+        &:first-child {
+          padding: 24px 0;
+          display: inline-block;
+          margin-bottom: -1px;
+          border-bottom: 1px solid $gray-bg-dark;
+        }
+        &:last-child {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          top: 28px;
+          right: 40px;
+          cursor: pointer;
+          // background-image:
+          //   linear-gradient(to bottom, transparent 11px, $gray-bg-dark 11px, $gray-bg-dark 13px, transparent 13px),
+          //   linear-gradient(to right, transparent 11px, $gray-bg-dark 11px, $gray-bg-dark 13px, transparent 13px);
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            background: $gray-bg-dark;
+            transition: transform 200ms ease;
+          }
+          &:before {
+            width: 2px;
+            height: 24px;
+            top: 0;
+            left: 11px;
+            transform-origin: center;
+            transform: scaleY(0);
+          }
+          &:after {
+            width: 24px;
+            height: 2px;
+            top: 11px;
+            left: 0;
+          }
+        }
+      }
+      &.collapsed {
+        span:before {
+          transform: scaleY(1);
+        }
       }
     }
     dd {
-      // margin-bottom: 24px;
-      // padding: 24px 0 64px 64px;
-      &.collapsed {
-        height: 0;
-        overflow: hidden;
-        transition: height 200ms ease;
-      }
+      border-bottom: 1px solid $gray-bg-dark;
+      // dt.collapsed + & {
+      //   height: 0;
+      //   overflow: hidden;
+      //   transition: height 200ms ease;
+      // }
       span {
         display: block;
         padding: 24px 0 64px 64px;
       }
     }
+    dt.collapsed + dd {
+      height: 0;
+      overflow: hidden;
+      transition: height 200ms ease;
+    }
     a {
       display: block;
-      margin: 0 auto;
+      margin: 64px auto;
     }
     .hidden {
       display: none;
