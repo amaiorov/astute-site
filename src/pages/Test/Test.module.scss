@@ -1,5 +1,58 @@
 @import 'variables.scss';
 
 .wrapper {
-
+  background: $black;
+  color: $white;
+  padding: 100px 0;
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  p {
+    text-align: center;
+    line-height: 33px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $white;
+    }
+  }
+  ul {
+    display: flex;
+    position: relative;
+    li {
+      width: 100%;
+      flex: 0 0 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      left: 0;
+      opacity: 0;
+      transform: scale(0.5);
+      transform-origin: center center;
+      transition: all 1000ms ease;
+    }
+    @for $i from 0 through 6 {
+      &[data-current-slide="#{$i}"] {
+        > li {
+          left: ($i * -100%);
+          &:nth-child(#{$i + 1}) {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
 }
