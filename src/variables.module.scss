@@ -1,0 +1,36 @@
+$white: #fff;
+$black: #000;
+$red: #E52626;
+$blue: #00A2E9;
+$gray-text: #333;
+$gray-bg-dark: #333;
+$gray-bg-light: #EAEBEB;
+$gray-bg-x-light: #EBECED;
+$gray-bg-xx-light: #F8F8F8;
+$ease-100: all ease 100ms;
+$ease-200: all ease 200ms;
+$ease-1000: all ease 1000ms;
+
+$colors: (
+  white: $white,
+  black: $black,
+  red: $red,
+  blue: $blue,
+  gray-text: $gray-text,
+  gray-bg-dark: $gray-bg-dark,
+  gray-bg-light: $gray-bg-light,
+  gray-bg-x-light: $gray-bg-x-light,
+  gray-bg-xx-light: $gray-bg-xx-light
+)
+
+:export {
+  white: $white;
+  black: $black;
+  red: $red;
+  blue: $blue;
+  gray-text: $gray-text;
+  gray-bg-dark: $gray-bg-dark;
+  gray-bg-light: $gray-bg-light;
+  gray-bg-x-light: $gray-bg-x-light;
+  gray-bg-xx-light: $gray-bg-xx-light;
+}

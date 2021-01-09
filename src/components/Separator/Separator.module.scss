@@ -1,0 +1,69 @@
+@import 'variables.module.scss';
+
+.separator {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 30px, 50% calc(100% - 30px);
+    background-size: 92px auto;
+    animation: arrow 1000ms ease infinite;
+    animation-direction: alternate;
+    z-index: 20;
+    transform-origin: center center;
+  }
+  &.top-arrow-light.bottom-arrow-light:before {
+    background-image: url('~assets/images/arrow-down-light.svg'), url('~assets/images/arrow-down-light.svg');
+  }
+  &.top-arrow-dark.bottom-arrow-dark:before {
+    background-image: url('~assets/images/arrow-down-dark.svg'), url('~assets/images/arrow-down-dark.svg');
+  }
+  &.top-arrow-light.bottom-arrow-dark:before {
+    background-image: url('~assets/images/arrow-down-light.svg'), url('~assets/images/arrow-down-dark.svg');
+  }
+  &.top-arrow-dark.bottom-arrow-light:before {
+    background-image: url('~assets/images/arrow-down-dark.svg'), url('~assets/images/arrow-down-light.svg');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    border-top: 170px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 100vw solid transparent; // the border-color here sets the bg
+    z-index: 10;
+  }
+  @each $color in map-keys($colors) {
+    background: #{$color + '>>' + map-get($colors, $color)};
+    &.top-bg-#{$color} {
+      background: map-get($colors, $color);
+    }
+    &.bottom-bg-#{$color} {
+      &:after {
+        border-right-color: map-get($colors, $color);
+      }
+    }
+  }
+}
+
+@keyframes arrow {
+  from {
+    background-position: 50% 20px, 50% calc(100% - 40px);
+    opacity: 0.2;
+    // transform: scale(0.9);
+  }
+  to {
+    background-position: 50% 40px, 50% calc(100% - 20px);
+    opacity: 1;
+    // transform: scale(1);
+  }
+}

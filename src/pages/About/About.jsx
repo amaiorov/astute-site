@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import styles from './About.module.scss';
+import Separator from 'components/Separator/Separator';
 
 const About = (props) => {
 
@@ -45,10 +46,21 @@ const About = (props) => {
             <li><span>Our business is small and does not have a dedicated special finance team...</span></li>
             <li><span>We do not see any significant financial benefits for our business in catering specifically to subprime customers...</span></li>
           </ul>
-          <h1>We Can Solve Your Problems with Our Innovative Process!</h1>
+          <h1>We Can Solve Your Problems with <u>Our Innovative Process!</u></h1>
       </div>
     </section>
-    <div className={ styles.separator }></div>
+    <Separator
+      topBgColor={ 'black' }
+      bottomBgColor={ 'gray-bg-light' }
+      topArrowColor={ 'light' }
+      bottomArrowColor={ 'dark' }
+    />
+    <Separator
+      topBgColor={ 'gray-bg-light' }
+      bottomBgColor={ 'blue' }
+      topArrowColor={ 'dark' }
+      bottomArrowColor={ 'dark' }
+    />
   </>
   );
 }
