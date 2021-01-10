@@ -42,7 +42,7 @@ const FAQ = (props) => {
 
   return (
     <>
-      <section className={ cn(styles.wrapper) }>
+      <section className={ cn(styles.wrapper) } id="faq">
         <div className="content">
           <h1>Frequently Asked Questions</h1>
           <dl>

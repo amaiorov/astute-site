@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import styles from './Test.module.scss';
 import Separator from 'components/Separator/Separator';
@@ -34,7 +36,7 @@ const Test = (props) => {
 
   return (
     <>
-      <section className={ styles.wrapper }>
+      <section className={ styles.wrapper } id="test">
         <div className="content">
           <h1>What Can I Expect?</h1>
           <h3>Take the Test!</h3>
@@ -78,7 +80,9 @@ const Test = (props) => {
                 <br />
                 Do you want to learn more?
               </span>
-              <a href="#contact" className={ cn('button', 'light') }>Contact Us</a>
+              <BrowserRouter>
+                <HashLink to="#contact" smooth className={ cn('button', 'light') }>Contact Us</HashLink>
+              </BrowserRouter>
               <a href="#contact" className={ cn('button', 'light', 'transparent', styles.retake) } onClick={ rotate }>Retake</a>
             </li>
           </ul>

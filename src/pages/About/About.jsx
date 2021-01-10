@@ -8,7 +8,7 @@ const About = (props) => {
 
   return (
     <>
-      <section className={ cn(styles.wrapper, styles.about) }>
+      <section className={ cn(styles.wrapper, styles.about) } id="about">
         <div className="content">
           <h1>We are <u>Astute Subprime Consultants</u> and we help auto dealers serve the subprime consumer segment at a profit</h1>
           <p>We connect consumer and dealers with over 15 quality subprime and near-prime lenders. We train Sales, F&amp;I, and Management in the art of customer guidance, subprime deal structuring and inventory selection. We offer a proprietary real time post sales funding process to minimize funding lag-time.</p>

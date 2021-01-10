@@ -3,19 +3,22 @@ import styles from './Footer.module.scss';
 
 const Footer = (props) => {
 
+  const phone = '+1 908-217-1108';
+  const email = 'hello@astutesubprime.com';
+
   return (
     <footer className={ styles.wrapper }>
       <div className="content">
-        <div className={ styles.logo }>
-          logo
+        <div className={ styles.left }>
+          <div className={ styles.logo }></div>
           <span>&copy; Astute Subprime Consulting { new Date().getFullYear() }</span>
         </div>
-        <div>
+        <div className={ styles.right }>
           Astute Subprime Consulting
           <br />
-          +1 908-217-1108
+          { phone }
           <br />
-          <a href="mailto:hello@astutesubprime.com">hello@astutesubprime.com</a>
+          <a href={ 'mailto: ' + email }>{ email }</a>
           <br />
           <a href="#privacy">Privacy Policy</a>
         </div>

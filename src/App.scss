@@ -72,8 +72,8 @@ footer {
   > .content {
     width: 1320px;
     padding: 0 16px;
-    border-left: 1px dashed $red;
-    border-right: 1px dashed $red;
+    // border-left: 1px dashed $red;
+    // border-right: 1px dashed $red;
   }
 }
 
@@ -155,14 +155,7 @@ u {
   }
 }
 
-
-.grid {
-  display: flex;
-  flex-direction: row;
-  .col {
-    &:first-child {
-    }
-    &:last-child {
-    }
-  }
+textarea,
+select {
+  font-family: sweet-sans-pro, sans-serif;
 }

@@ -10,53 +10,53 @@ const Contact = (props) => {
   })
 
   return (
-    <section className={ styles.wrapper }>
+    <section className={ styles.wrapper } id="contact">
       <div className="content">
         <h1>Contact Us</h1>
         <p>If you have any question about Astute Subprime Consulting, feel free to ask us using the form below.<br />We will get back to you within one business day.</p>
         <form>
-          <div className="grid">
-            <div className="col">
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
+              <input required type="text" id="first-name" />
               <label htmlFor="first-name">First Name</label>
-              <input type="text" id="first-name" />
             </div>
-            <div className="col">
+            <div className={ styles.col }>
+              <input required type="text" id="last-name" />
               <label htmlFor="last-name">Last Name</label>
-              <input type="text" id="last-name" />
             </div>
           </div>
-          <div className="grid">
-            <div className="col">
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
+              <input required type="text" id="e-mail" />
               <label htmlFor="e-mail">E-mail</label>
-              <input type="text" id="e-mail" />
             </div>
           </div>
-          <div className="grid">
-            <div className="col">
-              <label htmlFor="organiztion">Organiztion</label>
-              <input type="text" id="organiztion" />
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
+              <input required type="text" id="organiztion" />
+              <label htmlFor="organiztion">Organization</label>
             </div>
           </div>
-          <div className="grid">
-            <div className="col">
-              <label htmlFor="phone">Phone</label>
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
               <input type="text" id="phone" />
+              <label htmlFor="phone">Phone</label>
             </div>
           </div>
-          <div className="grid">
-            <div className="col">
-              <label htmlFor="source">How did you find us?</label>
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
               <select id="source">
                 <option name="Internet search">Internet Search</option>
                 <option name="Word of mouth">Word of Mouth</option>
                 <option name="Industry trade fair">Industry Trade Fair</option>
               </select>
+              <label htmlFor="source">How did you find us?</label>
             </div>
           </div>
-          <div className="grid">
-            <div className="col">
+          <div className={ styles.grid }>
+            <div className={ styles.col }>
+              <textarea required name="inquiry" id="inquiry"></textarea>
               <label htmlFor="inquiry">Inquiry</label>
-              <textarea name="inquiry" id="inquiry"></textarea>
             </div>
           </div>
           <a href="#send" className={ cn('button', 'dark') }>Send</a>
