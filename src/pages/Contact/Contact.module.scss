@@ -8,6 +8,9 @@
     text-align: center;
     margin-bottom: 100px;
   }
+  h2 {
+    text-align: center;
+  }
   p {
     text-align: center;
     line-height: 33px;
@@ -18,7 +21,13 @@
     align-items: center;
     flex-direction: column;
     width: 850px;
+    max-height: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+    transition: $ease-200;
+    &.collapsed {
+      max-height: 0;
+    }
     .grid {
       width: 100%;
       display: flex;
@@ -51,6 +60,9 @@
           content: ' *';
           color: $red;
         }
+      }
+      &.error {
+        border: 1px solid red;
       }
     }
     select {
