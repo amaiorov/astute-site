@@ -36,6 +36,12 @@ const About = (props) => {
           </ul>
         </div>
       </section>
+      <Separator
+        topBgColor={ 'black' }
+        bottomBgColor={ 'gray-bg-xx-light' }
+        topArrowColor={ 'light' }
+        bottomArrowColor={ 'dark' }
+      />
       <section className={ cn(styles.wrapper, styles.challenges) }>
         <div className="content">
           <h1>What Challenges Does Your Dealership Face?</h1>
@@ -50,14 +56,8 @@ const About = (props) => {
       </div>
     </section>
     <Separator
-      topBgColor={ 'black' }
+      topBgColor={ 'gray-bg-xx-light' }
       bottomBgColor={ 'gray-bg-light' }
-      topArrowColor={ 'light' }
-      bottomArrowColor={ 'dark' }
-    />
-    <Separator
-      topBgColor={ 'gray-bg-light' }
-      bottomBgColor={ 'blue' }
       topArrowColor={ 'dark' }
       bottomArrowColor={ 'dark' }
     />

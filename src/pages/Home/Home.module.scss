@@ -1,6 +1,7 @@
 @import 'variables.module.scss';
 
 .wrapper {
+  min-height: 100vh;
   color: $white;
   background-color: $black;
   background-image: url('~assets/images/hero-cropped.jpg'), url('~assets/images/hero-repeat.png');

@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import styles from './Process.module.scss';
+import Separator from 'components/Separator/Separator';
 
 const Process = (props) => {
 
@@ -72,7 +73,12 @@ const Process = (props) => {
           </ol>
         </div>
       </section>
-      <div className={ styles.separator }></div>
+      <Separator
+        topBgColor={ 'gray-bg-light' }
+        bottomBgColor={ 'gray-bg-xx-light' }
+        topArrowColor={ 'dark' }
+        bottomArrowColor={ 'dark' }
+      />
     </>
   );
 }

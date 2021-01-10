@@ -64,15 +64,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  // padding: 32px 0;
-  &.dark {
-    background: #333;
-    color: $white;
-  }
-  &.light {
-    background: #ccc;
-    color: $black;
-  }
 }
 
 .main > section,

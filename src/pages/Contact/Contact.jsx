@@ -10,10 +10,10 @@ const Contact = (props) => {
   })
 
   return (
-    <section className={ cn('light', styles.wrapper) }>
+    <section className={ styles.wrapper }>
       <div className="content">
         <h1>Contact Us</h1>
-        <p>If you have any question about Astute Subprime Consulting, feel free to ask us using the form below. We will get back to you within one business day.</p>
+        <p>If you have any question about Astute Subprime Consulting, feel free to ask us using the form below.<br />We will get back to you within one business day.</p>
         <form>
           <div className="grid">
             <div className="col">

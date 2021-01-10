@@ -4,6 +4,7 @@
   position: relative;
   height: 170px;
   overflow: hidden;
+  background: transparent;
   &:before {
     content: '';
     width: 100%;
@@ -43,7 +44,6 @@
     z-index: 10;
   }
   @each $color in map-keys($colors) {
-    background: #{$color + '>>' + map-get($colors, $color)};
     &.top-bg-#{$color} {
       background: map-get($colors, $color);
     }
@@ -52,6 +52,9 @@
         border-right-color: map-get($colors, $color);
       }
     }
+  }
+  &.transparent {
+    margin-top: -170px;
   }
 }
 

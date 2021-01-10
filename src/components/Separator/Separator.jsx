@@ -9,10 +9,11 @@ const Separator = (props) => {
     <>
       <div className={ cn({
         [styles.separator]: true,
-        [styles['top-bg-' + props.topBgColor]]: true,
-        [styles['bottom-bg-' + props.bottomBgColor]]: true,
-        [styles['top-arrow-' + props.topArrowColor]]: true,
-        [styles['bottom-arrow-' + props.bottomArrowColor]]: true
+        [styles.transparent]: props.transparent,
+        [styles['top-bg-' + props.topBgColor]]: props.topBgColor,
+        [styles['bottom-bg-' + props.bottomBgColor]]: props.bottomBgColor,
+        [styles['top-arrow-' + props.topArrowColor]]: props.topArrowColor,
+        [styles['bottom-arrow-' + props.bottomArrowColor]]: props.bottomArrowColor
       }) }></div>
     </>
   );

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import cn from 'classnames';
 
 import styles from './FAQ.module.scss';
+import Separator from 'components/Separator/Separator';
 
 const FAQ = (props) => {
 
@@ -140,7 +141,12 @@ const FAQ = (props) => {
           </dl>
         </div>
       </section>
-      <div className={ styles.separator }></div>
+      <Separator
+        topBgColor={ 'gray-bg-xx-light' }
+        bottomBgColor={ 'black' }
+        topArrowColor={ 'dark' }
+        bottomArrowColor={ 'light' }
+      />
     </>
   );
 }
