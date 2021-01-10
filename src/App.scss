@@ -72,6 +72,9 @@ footer {
   > .content {
     width: 1320px;
     padding: 0 16px;
+    @media only screen and (max-width: $break-large) {
+      padding: 0 32px;
+    }
     // border-left: 1px dashed $red;
     // border-right: 1px dashed $red;
   }
@@ -106,6 +109,10 @@ a {
     font-size: 20px;
     transform-origin: center center;
     transition: $ease-200;
+    @media only screen and (max-width: $break-medium) {
+      width: auto;
+      padding: 16px 32px;
+    }
     &:hover {
       transform: scale(1.05);
     }

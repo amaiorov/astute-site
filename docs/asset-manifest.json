@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/astute-site/static/css/main.846e2402.chunk.css",
+    "main.css": "/astute-site/static/css/main.85dcd3a9.chunk.css",
     "main.js": "/astute-site/static/js/main.365202d8.chunk.js",
     "main.js.map": "/astute-site/static/js/main.365202d8.chunk.js.map",
     "runtime-main.js": "/astute-site/static/js/runtime-main.6109bf25.js",
@@ -8,7 +8,7 @@
     "static/js/2.68b38e51.chunk.js": "/astute-site/static/js/2.68b38e51.chunk.js",
     "static/js/2.68b38e51.chunk.js.map": "/astute-site/static/js/2.68b38e51.chunk.js.map",
     "index.html": "/astute-site/index.html",
-    "static/css/main.846e2402.chunk.css.map": "/astute-site/static/css/main.846e2402.chunk.css.map",
+    "static/css/main.85dcd3a9.chunk.css.map": "/astute-site/static/css/main.85dcd3a9.chunk.css.map",
     "static/js/2.68b38e51.chunk.js.LICENSE.txt": "/astute-site/static/js/2.68b38e51.chunk.js.LICENSE.txt",
     "static/media/Separator.module.scss": "/astute-site/static/media/arrow-down-light.e4956be5.svg",
     "static/media/Contact.module.scss": "/astute-site/static/media/arrow-down-small.6e445466.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.6109bf25.js",
     "static/js/2.68b38e51.chunk.js",
-    "static/css/main.846e2402.chunk.css",
+    "static/css/main.85dcd3a9.chunk.css",
     "static/js/main.365202d8.chunk.js"
   ]
 }

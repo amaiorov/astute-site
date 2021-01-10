@@ -19,6 +19,11 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
+    @media only screen and (max-width: $break-large) {
+      width: 150px;
+      margin-right: auto;
+      background-position: 0 6px;
+    }
   }
   a {
     font-size: 16px;
@@ -26,11 +31,24 @@
     margin-left: 32px;
     text-align: center;
     word-spacing: 3px;
+    @media only screen and (max-width: $break-large) {
+      &:not(.button) {
+        height: 36px;
+        margin-left: 16px;
+      }
+    }
     &.button {
       width: 180px;
       padding: 12px 0;
       text-transform: none;
       word-spacing: normal;
+      @media only screen and (max-width: $break-large) {
+        width: auto;
+        padding: 12px 24px;
+        // margin-left: auto;
+        position: relative;
+        top: -8px;
+      }
     }
   }
 }

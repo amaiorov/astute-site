@@ -56,6 +56,9 @@
         background-image: url('~assets/images/process-analysis.svg');
         background-position: 100% 30px;
         background-size: 630px auto;
+        @media only screen and (max-width: $break-large) {
+          background-size: 48% auto;
+        }
       }
       &:nth-child(2) {
         padding-left: 50%;
@@ -63,12 +66,19 @@
         background-image: url('~assets/images/process-training-1.svg'), url('~assets/images/process-training-2.svg'), url('~assets/images/process-training-3.svg');
         background-position: 0 130px, 310px 680px, 50px 950px;
         background-size: 591px auto, 326px auto, 331px auto;
+        @media only screen and (max-width: $break-large) {
+          background-size: 45% auto, 48% auto, 48% auto;
+          background-position: 0 130px, 0 700px, 0 1200px;
+        }
       }
       &:nth-child(3) {
         padding-right: 52%;
         background-image: url('~assets/images/process-strategy.svg');
         background-position: 100% 80px;
         background-size: 602px auto;
+        @media only screen and (max-width: $break-large) {
+          background-size: 50% auto;
+        }
       }
       .tag {
         height: 36px;
