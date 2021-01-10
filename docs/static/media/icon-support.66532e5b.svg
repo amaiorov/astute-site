@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105.067" height="84.656" viewBox="0 0 105.067 84.656">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Group_36" data-name="Group 36" transform="translate(1.5 1.5)">
+    <path id="layer2" class="cls-1" d="M58.664,51.48,67.9,60.719A6.8,6.8,0,1,0,77.519,51.1L54.675,28.243c-4.152-4.151-8.739-4.545-13.636.354l-1.426,1.409a6.8,6.8,0,1,1-9.621-9.623l4.814-4.8C40.361,10.016,43.522,8,48.2,8h7.383L85.839,38.239l-10.6,10.6" transform="translate(16.228 -8)"/>
+    <path id="layer2-2" data-name="layer2" class="cls-1" d="M49.557,33.559,61.2,45.2a6.807,6.807,0,1,1-9.625,9.628L40.961,44.206" transform="translate(25.316 9.92)"/>
+    <path id="layer2-3" data-name="layer2" class="cls-1" d="M43.524,39.818l8.208,8.211a6.8,6.8,0,0,1-9.615,9.62l-4.809-4.811" transform="translate(22.755 14.308)"/>
+    <path id="layer2-4" data-name="layer2" class="cls-1" d="M62.587,75.313l2.365,2.37a6.8,6.8,0,0,1-9.616,9.623L52.97,84.934m-40-36.453L2,37.507l27.254-27.26s3.627,4.222,6.675,4.222c3.7,0,4.6-1.2,6.8-3.4,3.613-3.617,9.05-3.509,13.609,1.043" transform="translate(-2 -7.642)"/>
+    <path id="layer1" class="cls-1" d="M22.366,41.013a6.8,6.8,0,1,0-9.616-9.62L7.944,36.2a6.8,6.8,0,1,0,9.621,9.623Z" transform="translate(0.769 6.896)"/>
+    <path id="layer1-2" data-name="layer1" class="cls-1" d="M29.018,46.605a6.8,6.8,0,0,0-9.625-9.621l-7.209,7.209A6.8,6.8,0,1,0,21.8,53.816Zm9.616,9.621a6.8,6.8,0,0,0-9.616-9.621l-4.809,4.809a6.8,6.8,0,0,0,9.62,9.62Z" transform="translate(3.742 10.923)"/>
+    <path id="layer1-3" data-name="layer1" class="cls-1" d="M38.023,58.223A6.8,6.8,0,1,0,28.4,48.6l-2.368,2.37A6.8,6.8,0,1,0,35.651,60.6Z" transform="translate(13.449 19.069)"/>
+  </g>
+</svg>

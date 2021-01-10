@@ -18,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start --no-cache",
     "build": "react-scripts build",
+    "build:github": "react-scripts build && mv build docs",
+    "deploy:github": "func() { if [[ -z $1 ]]; then echo \"ERROR: empty message; please provide a commit message\"; exit 1; else git pull && npm run build:github && git add . && git commit -m \"DEPLOY - $1\" && git push; fi }; func",
     "test": "react-scripts test --no-cache",
     "eject": "react-scripts eject"
   },

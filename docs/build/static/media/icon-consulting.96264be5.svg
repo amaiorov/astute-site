@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.745" height="67.346" viewBox="0 0 90.745 67.346">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Orion_car" transform="translate(1.5 1.5)">
+    <path id="layer2" class="cls-1" d="M21.549,54.474v5.85a2.925,2.925,0,0,1-2.925,2.925H6.925A2.925,2.925,0,0,1,4,60.324V54.181m81.9,0v6.142a2.925,2.925,0,0,1-2.925,2.925h-11.7a2.925,2.925,0,0,1-2.925-2.925v-5.85M33.248,34h23.4" transform="translate(-1.075 1.098)"/>
+    <path id="layer1" class="cls-1" d="M78.046,27.549,66.346,10H25.4L13.7,27.549,2,39.248V61.185a4.387,4.387,0,0,0,4.387,4.387H85.358a4.387,4.387,0,0,0,4.387-4.387V39.248ZM11.067,30.474h69.9M2,53.873H89.745M2,27.549H13.7m64.346,0h11.7" transform="translate(-2 -10)"/>
+    <path id="layer1-2" data-name="layer1" class="cls-1" d="M2,32H16.624l11.7,11.7M89.745,32H75.121l-11.7,11.7" transform="translate(-2 0.173)"/>
+  </g>
+</svg>
