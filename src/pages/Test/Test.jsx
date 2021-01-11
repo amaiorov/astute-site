@@ -83,7 +83,7 @@ const Test = (props) => {
               <BrowserRouter>
                 <HashLink to="#contact" smooth className={ cn('button', 'light') }>Contact Us</HashLink>
               </BrowserRouter>
-              <a href="#contact" className={ cn('button', 'light', 'transparent', styles.retake) } onClick={ rotate }>Retake</a>
+              <a href="#test" className={ cn('button', 'light', 'transparent', styles.retake) } onClick={ rotate }>Retake</a>
             </li>
           </ul>
         </div>

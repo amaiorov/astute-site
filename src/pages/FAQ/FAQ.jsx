@@ -102,7 +102,9 @@ const FAQ = (props) => {
             <dd>
               <span>Yes you will be able to offer financing to consumers in chapter 7 open or discharged and chapter 13 that is confirmed by the trustee.</span>
             </dd>
-            <a href="#more" className={ cn('button', 'dark', 'transparent') } onClick={ seeMore } id="show-more">See More</a>
+            <div id="show-more">
+              <a href="#more" className={ cn('button', 'dark', 'transparent') } onClick={ seeMore }>See More</a>
+            </div>
             <dt>
               <span>What is the benefit to my organization to serve the SubPrime consumer?</span>
               <span onClick={ expand }></span>

@@ -59,6 +59,17 @@
         @media only screen and (max-width: $break-large) {
           background-size: 48% auto;
         }
+        @media only screen and (max-width: $break-medium) {
+          padding-right: 0;
+          padding-bottom: 100px;
+          background-position: 50% 300px;
+          background-size: 80vw auto;
+          .subtitle {
+            span {
+              margin-top: 80vw;
+            }
+          }
+        }
       }
       &:nth-child(2) {
         padding-left: 50%;
@@ -70,6 +81,20 @@
           background-size: 45% auto, 48% auto, 48% auto;
           background-position: 0 130px, 0 700px, 0 1200px;
         }
+        @media only screen and (max-width: $break-medium) {
+          padding-left: 0;
+          padding-bottom: 100px;
+          background-image: url('~assets/images/process-training-1.svg');
+          background-position: 100% 190px;
+          background-size: 50% auto;
+          background-position: 50% 300px;
+          background-size: 80vw auto;
+          .subtitle {
+            span {
+              margin-top: 80vw;
+            }
+          }
+        }
       }
       &:nth-child(3) {
         padding-right: 52%;
@@ -78,6 +103,16 @@
         background-size: 602px auto;
         @media only screen and (max-width: $break-large) {
           background-size: 50% auto;
+        }
+        @media only screen and (max-width: $break-medium) {
+          padding-right: 0;
+          background-position: 50% 300px;
+          background-size: 80vw auto;
+          .subtitle {
+            span {
+              margin-top: 80vw;
+            }
+          }
         }
       }
       .tag {

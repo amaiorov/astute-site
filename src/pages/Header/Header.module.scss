@@ -5,6 +5,9 @@
   width: 100%;
   position: absolute;
   color: $white;
+  @media only screen and (max-width: $break-medium) {
+    opacity: 0.5;
+  }
   > div {
     display: flex;
     align-items: center;

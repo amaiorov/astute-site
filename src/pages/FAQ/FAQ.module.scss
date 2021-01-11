@@ -86,9 +86,11 @@
       overflow: hidden;
       transition: height 200ms ease;
     }
-    a {
-      display: block;
-      margin: 64px auto;
+    div {
+      text-align: center;
+      a {
+        margin: 64px auto;
+      }
     }
     .hidden {
       display: none;
