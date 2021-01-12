@@ -5,14 +5,49 @@
   width: 100%;
   position: absolute;
   color: $white;
-  @media only screen and (max-width: $break-medium) {
-    opacity: 0.5;
-  }
   > div {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 0 32px;
+    @media only screen and (max-width: $break-medium) {
+      justify-content: space-around;
+      padding-top: 128px;
+      position: fixed;
+      right: -100vw;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: $gray-bg-dark;
+      flex-direction: column;
+      z-index: 100;
+      box-sizing: border-box;
+      transition: $ease-200;
+      &.open {
+        right: 0;
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+    @media only screen and (max-width: $break-medium) {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-image: url('~assets/images/menu.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-color: transparent;
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 101;
+      transition: $ease-200;
+      &.open {
+        background-image: url('~assets/images/close.svg');
+      }
+    }
   }
   .logo {
     width: 269px;
@@ -27,6 +62,23 @@
       margin-right: auto;
       background-position: 0 6px;
     }
+    @media only screen and (max-width: $break-medium) {
+      width: 200px;
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      background-position: 0 0;
+      &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 80px;
+        background: $gray-bg-dark;
+        opacity: 0.5;
+      }
+    }
   }
   a {
     font-size: 16px;
@@ -40,6 +92,11 @@
         margin-left: 16px;
       }
     }
+    @media only screen and (max-width: $break-medium) {
+      font-size: 30px;
+      margin-left: 0 !important;
+      margin-bottom: 64px;
+    }
     &.button {
       width: 180px;
       padding: 12px 0;
@@ -51,6 +108,9 @@
         // margin-left: auto;
         position: relative;
         top: -8px;
+      }
+      @media only screen and (max-width: $break-medium) {
+        margin-top: 64px;
       }
     }
   }

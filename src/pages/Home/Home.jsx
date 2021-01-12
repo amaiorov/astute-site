@@ -10,7 +10,7 @@ const Home = (props) => {
 
   return (
     <>
-      <section className={ cn(styles.wrapper) }>
+      <section className={ cn(styles.wrapper) } id="home">
         <div className="content">
           <h1>Your subprime clients want to buy a car.</h1>
           <h1>You provide them with the perfect solution.</h1>
