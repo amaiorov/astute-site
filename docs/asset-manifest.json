@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/astute-site/static/css/main.85dcd3a9.chunk.css",
-    "main.js": "/astute-site/static/js/main.365202d8.chunk.js",
-    "main.js.map": "/astute-site/static/js/main.365202d8.chunk.js.map",
+    "main.css": "/astute-site/static/css/main.08f094fb.chunk.css",
+    "main.js": "/astute-site/static/js/main.b6f785cc.chunk.js",
+    "main.js.map": "/astute-site/static/js/main.b6f785cc.chunk.js.map",
     "runtime-main.js": "/astute-site/static/js/runtime-main.6109bf25.js",
     "runtime-main.js.map": "/astute-site/static/js/runtime-main.6109bf25.js.map",
-    "static/js/2.68b38e51.chunk.js": "/astute-site/static/js/2.68b38e51.chunk.js",
-    "static/js/2.68b38e51.chunk.js.map": "/astute-site/static/js/2.68b38e51.chunk.js.map",
+    "static/js/2.ca95dd89.chunk.js": "/astute-site/static/js/2.ca95dd89.chunk.js",
+    "static/js/2.ca95dd89.chunk.js.map": "/astute-site/static/js/2.ca95dd89.chunk.js.map",
     "index.html": "/astute-site/index.html",
-    "static/css/main.85dcd3a9.chunk.css.map": "/astute-site/static/css/main.85dcd3a9.chunk.css.map",
-    "static/js/2.68b38e51.chunk.js.LICENSE.txt": "/astute-site/static/js/2.68b38e51.chunk.js.LICENSE.txt",
+    "static/css/main.08f094fb.chunk.css.map": "/astute-site/static/css/main.08f094fb.chunk.css.map",
+    "static/js/2.ca95dd89.chunk.js.LICENSE.txt": "/astute-site/static/js/2.ca95dd89.chunk.js.LICENSE.txt",
     "static/media/Separator.module.scss": "/astute-site/static/media/arrow-down-light.e4956be5.svg",
     "static/media/Contact.module.scss": "/astute-site/static/media/arrow-down-small.6e445466.svg",
     "static/media/About.module.scss": "/astute-site/static/media/icon-training-blue.237825f0.svg",
+    "static/media/Header.module.scss": "/astute-site/static/media/menu.83bb9964.svg",
     "static/media/Home.module.scss": "/astute-site/static/media/hero-cropped.0dbef355.jpg",
-    "static/media/Header.module.scss": "/astute-site/static/media/logo.a1d2c6eb.png",
+    "static/media/Footer.module.scss": "/astute-site/static/media/logo.a1d2c6eb.png",
     "static/media/Process.module.scss": "/astute-site/static/media/process-training-3.f9de35cd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6109bf25.js",
-    "static/js/2.68b38e51.chunk.js",
-    "static/css/main.85dcd3a9.chunk.css",
-    "static/js/main.365202d8.chunk.js"
+    "static/js/2.ca95dd89.chunk.js",
+    "static/css/main.08f094fb.chunk.css",
+    "static/js/main.b6f785cc.chunk.js"
   ]
 }
