@@ -9,6 +9,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 32px;
+    @media only screen and (max-width: $break-small) {
+      flex-direction: column;
+    }
+    position: relative;
   }
   .left {
     .logo {
@@ -24,12 +28,19 @@
       display: block;
       font-size: 16px;
       margin-top: 24px;
+      @media only screen and (max-width: $break-small) {
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
   .right {
     text-align: right;
     font-size: 16px;
     line-height: 24px;
-
+    @media only screen and (max-width: $break-small) {
+      text-align: center;
+      padding: 60px 0;
+    }
   }
 }

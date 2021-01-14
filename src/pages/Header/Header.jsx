@@ -8,10 +8,16 @@ import styles from './Header.module.scss';
 const Header = (props) => {
 
   let [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  let [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   useEffect((props) => {
     window.addEventListener('scroll', (evt) => {
       console.log(window.pageYOffset)
+      if (window.pageYOffset > 145) {
+        setIsHeaderSticky(true);
+      } else {
+        setIsHeaderSticky(false);
+      }
     });
   }, []);
 
@@ -21,7 +27,10 @@ const Header = (props) => {
   };
 
   return (
-    <header className={ styles.wrapper }>
+    <header className={ cn({
+        [styles.wrapper]: true,
+        [styles.sticky]: isHeaderSticky,
+      }) }>
       <span className={ cn({
           [styles['mobile-menu']]: true,
           [styles.open]: isMobileMenuOpen

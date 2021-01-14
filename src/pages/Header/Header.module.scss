@@ -1,15 +1,39 @@
 @import 'variables.module.scss';
 
 .wrapper {
-  height: 140px;
+  // height: 140px;
   width: 100%;
   position: absolute;
   color: $white;
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 140px;
+    background: $gray-bg-dark;
+    opacity: 0;
+    transition: $ease-200;
+    z-index: 100;
+    @media only screen and (max-width: $break-medium) {
+      height: 80px;
+    }
+  }
+  &.sticky {
+    &:after {
+      opacity: 0.75;
+    }
+  }
   > div {
+    position: fixed;
+    z-index: 101;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    height: 140px;
     padding: 0 32px;
+    box-sizing: border-box;
     @media only screen and (max-width: $break-medium) {
       justify-content: space-around;
       padding-top: 128px;
@@ -20,7 +44,7 @@
       height: 100vh;
       background: $gray-bg-dark;
       flex-direction: column;
-      z-index: 100;
+      z-index: 101;
       box-sizing: border-box;
       transition: $ease-200;
       &.open {
@@ -28,6 +52,12 @@
       }
     }
   }
+  // &.sticky {
+  //   > div {
+  //     position: fixed;
+  //     z-index: 10;
+  //   }
+  // }
   .mobile-menu {
     display: none;
     @media only screen and (max-width: $break-medium) {
@@ -42,7 +72,7 @@
       position: fixed;
       top: 16px;
       right: 16px;
-      z-index: 101;
+      z-index: 102;
       transition: $ease-200;
       &.open {
         background-image: url('~assets/images/close.svg');
@@ -68,16 +98,6 @@
       top: 16px;
       left: 16px;
       background-position: 0 0;
-      &:after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 80px;
-        background: $gray-bg-dark;
-        opacity: 0.5;
-      }
     }
   }
   a {

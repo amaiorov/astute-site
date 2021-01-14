@@ -63,12 +63,16 @@
           padding-right: 0;
           padding-bottom: 100px;
           background-position: 50% 300px;
-          background-size: 80vw auto;
+          background-size: auto 60vw;
           .subtitle {
             span {
               margin-top: 80vw;
             }
           }
+        }
+        @media only screen and (max-width: $break-medium) {
+          background-position: 50% 400px;
+          background-size: auto 50vw;
         }
       }
       &:nth-child(2) {
@@ -88,12 +92,16 @@
           background-position: 100% 190px;
           background-size: 50% auto;
           background-position: 50% 300px;
-          background-size: 80vw auto;
+          background-size: auto 60vw;
           .subtitle {
             span {
               margin-top: 80vw;
             }
           }
+        }
+        @media only screen and (max-width: $break-medium) {
+          background-position: 50% 450px;
+          background-size: auto 50vw;
         }
       }
       &:nth-child(3) {
@@ -107,12 +115,16 @@
         @media only screen and (max-width: $break-medium) {
           padding-right: 0;
           background-position: 50% 300px;
-          background-size: 80vw auto;
+          background-size: auto 60vw;
           .subtitle {
             span {
               margin-top: 80vw;
             }
           }
+        }
+        @media only screen and (max-width: $break-medium) {
+          background-position: 50% 370px;
+          background-size: auto 50vw;
         }
       }
       .tag {
@@ -174,6 +186,11 @@
                 }
               }
             }
+          }
+        }
+        @media only screen and (max-width: $break-small) {
+          ul {
+            margin-left: 16px !important;
           }
         }
       }

@@ -26,13 +26,13 @@ const Test = (props) => {
     } else {
       setSlide(slide + 1);
     }
-  }
+  };
 
   const answer = (evt) => {
     const key = evt.target.value.split(':')[0];
     const val = evt.target.value.split(':')[1];
     setAnswers({...answers, [key]: val});
-  }
+  };
 
   return (
     <>
