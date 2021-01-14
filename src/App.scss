@@ -79,6 +79,10 @@ footer {
     @media only screen and (max-width: $break-large) {
       padding: 0 32px;
     }
+    @media only screen and (max-width: $break-small) {
+      box-sizing: border-box;
+      overflow: hidden;
+    }
     // border-left: 1px dashed $red;
     // border-right: 1px dashed $red;
   }
