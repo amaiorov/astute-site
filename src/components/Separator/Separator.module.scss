@@ -5,6 +5,9 @@
   height: 170px;
   overflow: hidden;
   background: transparent;
+  @media only screen and (max-width: $break-small) {
+    height: 70px;
+  }
   &:before {
     content: '';
     width: 100%;
@@ -19,6 +22,10 @@
     animation-direction: alternate;
     z-index: 20;
     transform-origin: center center;
+    @media only screen and (max-width: $break-small) {
+      background-size: 50px auto;
+      background-position: 50% 0px, 50% calc(100% - 10px);
+    }
   }
   &.top-arrow-light.bottom-arrow-light:before {
     background-image: url('~assets/images/arrow-down-light.svg'), url('~assets/images/arrow-down-light.svg');
@@ -39,9 +46,12 @@
     top: 0;
     height: 0;
     border-top: 170px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-bottom: 0 solid transparent;
     border-right: 100vw solid transparent; // the border-color here sets the bg
     z-index: 10;
+    @media only screen and (max-width: $break-small) {
+      border-top: 70px solid transparent;
+    }
   }
   @each $color in map-keys($colors) {
     &.top-bg-#{$color} {
@@ -68,5 +78,20 @@
     background-position: 50% 40px, 50% calc(100% - 20px);
     opacity: 1;
     // transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: $break-small) {
+  @keyframes arrow {
+    from {
+      background-position: 50% 0px, 50% calc(100% - 20px);
+      opacity: 0.2;
+      // transform: scale(0.9);
+    }
+    to {
+      background-position: 50% 20px, 50% calc(100% - 0px);
+      opacity: 1;
+      // transform: scale(1);
+    }
   }
 }

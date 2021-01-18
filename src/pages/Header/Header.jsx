@@ -12,7 +12,7 @@ const Header = (props) => {
 
   useEffect((props) => {
     window.addEventListener('scroll', (evt) => {
-      console.log(window.pageYOffset)
+      let about = document.querySelector('#challenges');
       if (window.pageYOffset > 145) {
         setIsHeaderSticky(true);
       } else {
@@ -20,6 +20,21 @@ const Header = (props) => {
       }
     });
   }, []);
+
+  const getScrollPercentage = (el) => {
+    const windowScroll = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    // const about = document.querySelector('#about');
+    const elTop = el.offsetTop;
+    const elHeight = el.offsetHeight;
+    const p = ((windowScroll - elTop + windowHeight) / elHeight * 100).toFixed(1);
+    if (p < 0 || p > 100) {
+      return null;
+    } else {
+      console.log(el.id + ': ' + p);
+      return el.id + ': ' + p;
+    }
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);

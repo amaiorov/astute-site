@@ -8,6 +8,11 @@
   background-position: 100% 0, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto 100%, 1px 100%;
+  @media only screen and (max-width: $break-small) {
+    background-image: url('~assets/images/hero-cropped.jpg');
+    background-size: 100% auto;
+  }
+  text-align: center;
   > div {
     padding-top: 236px !important;
     padding-bottom: 236px !important;
@@ -24,5 +29,11 @@
   }
   a {
     margin-right: 32px;
+    @media only screen and (max-width: $break-small) {
+      margin: 0;
+      &:last-of-type {
+        margin-top: 32px;
+      }
+    }
   }
 }

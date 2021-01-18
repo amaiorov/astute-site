@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import cn from 'classnames';
 
 import styles from './About.module.scss';
 import Separator from 'components/Separator/Separator';
 
 const About = (props) => {
+
+  let [css, setCss] = useState({});
+
+  useEffect((props) => {
+    // window.addEventListener('scroll', (evt) => {
+    //   let challenges = document.querySelector('#challenges');
+    //   getScrollPercentage(challenges);
+    // });
+  }, []);
+
+  const getScrollPercentage = (el) => {
+    const windowScroll = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    // const about = document.querySelector('#about');
+    const elTop = el.offsetTop;
+    const elHeight = el.offsetHeight;
+    const p = ((windowScroll - elTop + windowHeight) / elHeight * 100).toFixed(1);
+    if (p < 0 || p > 100) {
+      return null;
+    } else {
+      const bgSize = p + '%';
+      const bgPosition = 'center ' + p  + '%';
+      setCss({
+        'backgroundSize': bgSize,
+        'backgroundPosition': bgPosition
+      });
+      console.log(el.id + ': ' + p);
+      return el.id + ': ' + p;
+    }
+  };
 
   return (
     <>
@@ -42,7 +72,7 @@ const About = (props) => {
         topArrowColor={ 'light' }
         bottomArrowColor={ 'dark' }
       />
-      <section className={ cn(styles.wrapper, styles.challenges) }>
+    <section className={ cn(styles.wrapper, styles.challenges) } id="challenges">
         <div className="content">
           <h1>What Challenges Does Your Dealership Face?</h1>
           <ul>
