@@ -23,8 +23,7 @@
         border-top: 1px solid $gray-bg-dark;
       }
       @media only screen and (max-width: $break-small) {
-        padding: 0 16px 0 16px;
-        // border: 1px solid red;
+        padding: 0 48px 0 16px;
       }
       span {
         &:first-child {
@@ -34,13 +33,13 @@
           border-bottom: 1px solid $gray-bg-dark;
           @media only screen and (max-width: $break-small) {
             // border: 1px solid red;
-            &:before {
-              content: '';
-              float: right;
-              width: 24px;
-              height: 24px;
-              margin-left: 8px;
-            }
+            // &:before {
+            //   content: '';
+            //   float: right;
+            //   width: 24px;
+            //   height: 24px;
+            //   margin-left: 8px;
+            // }
           }
         }
         &:last-child {
@@ -55,12 +54,19 @@
           //   linear-gradient(to right, transparent 11px, $gray-bg-dark 11px, $gray-bg-dark 13px, transparent 13px);
           transform-origin: center center;
           transition: $ease-200;
-          @media only screen and (max-width: $break-small) {
-            top: 24px;
-            right: 16px;
+          @media only screen and (max-width: $break-medium) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // top: 24px;
+            // right: 16px;
           }
           &:hover {
             transform: scale(1.2);
+            @media only screen and (max-width: $break-medium) {
+              transform: none;
+            }
           }
           &:before,
           &:after {
@@ -76,12 +82,24 @@
             left: 11px;
             transform-origin: center;
             transform: scaleY(0);
+            @media only screen and (max-width: $break-medium) {
+              left: auto;
+              right: 22px;
+              top: 11px;
+              top: calc(50% - 11px);
+            }
           }
           &:after {
             width: 24px;
             height: 2px;
             top: 11px;
             left: 0;
+            @media only screen and (max-width: $break-medium) {
+              left: auto;
+              right: 11px;
+              top: 22px;
+              top: calc(50% - 0px);
+            }
           }
         }
       }
