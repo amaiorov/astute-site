@@ -102,6 +102,10 @@ button {
   font-size: 22px;
   border: 1px solid $white;
   font-family: sweet-sans-pro, sans-serif;
+  @media only screen and (max-width: $break-small) {
+    width: 100%;
+    box-sizing: border-box;
+  }
   &:focus,
   &.active {
     outline: none;
@@ -124,6 +128,10 @@ a {
     @media only screen and (max-width: $break-medium) {
       width: auto;
       padding: 16px 32px;
+    }
+    @media only screen and (max-width: $break-small) {
+      width: 100%;
+      box-sizing: border-box;
     }
     &:hover {
       transform: scale(1.05);

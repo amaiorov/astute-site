@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/astute-site/static/css/main.f62b1a2b.chunk.css",
-    "main.js": "/astute-site/static/js/main.57ca7b55.chunk.js",
-    "main.js.map": "/astute-site/static/js/main.57ca7b55.chunk.js.map",
+    "main.css": "/astute-site/static/css/main.17ca6523.chunk.css",
+    "main.js": "/astute-site/static/js/main.050bdab9.chunk.js",
+    "main.js.map": "/astute-site/static/js/main.050bdab9.chunk.js.map",
     "runtime-main.js": "/astute-site/static/js/runtime-main.6109bf25.js",
     "runtime-main.js.map": "/astute-site/static/js/runtime-main.6109bf25.js.map",
     "static/js/2.d9a823df.chunk.js": "/astute-site/static/js/2.d9a823df.chunk.js",
     "static/js/2.d9a823df.chunk.js.map": "/astute-site/static/js/2.d9a823df.chunk.js.map",
     "index.html": "/astute-site/index.html",
-    "static/css/main.f62b1a2b.chunk.css.map": "/astute-site/static/css/main.f62b1a2b.chunk.css.map",
+    "static/css/main.17ca6523.chunk.css.map": "/astute-site/static/css/main.17ca6523.chunk.css.map",
     "static/js/2.d9a823df.chunk.js.LICENSE.txt": "/astute-site/static/js/2.d9a823df.chunk.js.LICENSE.txt",
     "static/media/Separator.module.scss": "/astute-site/static/media/arrow-down-light.e4956be5.svg",
     "static/media/Contact.module.scss": "/astute-site/static/media/arrow-down-small.6e445466.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.6109bf25.js",
     "static/js/2.d9a823df.chunk.js",
-    "static/css/main.f62b1a2b.chunk.css",
-    "static/js/main.57ca7b55.chunk.js"
+    "static/css/main.17ca6523.chunk.css",
+    "static/js/main.050bdab9.chunk.js"
   ]
 }

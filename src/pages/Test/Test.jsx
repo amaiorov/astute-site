@@ -65,21 +65,28 @@ const Test = (props) => {
                 }) } onClick={ rotate }>See Result</a>
             </li>
             <li>
-              <span className={ styles.title }>Learn your possible additional income.</span>
-              <span className={ styles.title }>
-                If you capture half, you potential additional income is<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200) }</b> per month
-                <br />
-                <br />
-                <br />
-                ...that’s a total of<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200 * 12) }</b> per year.
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                Do you want to learn more?
-              </span>
+              { answers[2] === 'yes' &&
+                <>
+                  <span className={ styles.title }>Learn your possible additional income.</span>
+                  <span className={ styles.title }>
+                    If you capture half, you potential additional income is<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200) }</b> per month
+                    <br />
+                    <br />
+                    <br />
+                    ...that’s a total of<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200 * 12) }</b> per year.
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    Do you want to learn more?
+                  </span>
+                </>
+              }
+              { answers[2] === 'no' &&
+                <span className={styles.title}>Please contact us for a customized analysis of your business and to learn you possible additional income.</span>
+              }
               <BrowserRouter>
                 <HashLink to="#contact" smooth className={ cn('button', 'light') }>Contact Us</HashLink>
               </BrowserRouter>
