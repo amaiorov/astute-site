@@ -11,8 +11,8 @@
   @media only screen and (max-width: $break-small) {
     background-image: url('~assets/images/hero-cropped.jpg');
     background-size: 100% auto;
+    text-align: center;
   }
-  text-align: center;
   > div {
     padding-top: 236px !important;
     padding-bottom: 236px !important;
