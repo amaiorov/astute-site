@@ -111,6 +111,7 @@
     }
     dd {
       border-bottom: 1px solid $gray-bg-dark;
+      transition: height 200ms ease;
       // dt.collapsed + & {
       //   height: 0;
       //   overflow: hidden;
@@ -119,6 +120,9 @@
       span {
         display: block;
         padding: 24px 104px 64px 64px;
+        transition: all 400ms ease;
+        opacity: 1;
+        transform: translateY(0);
         @media only screen and (max-width: $break-small) {
           // border: 1px solid red;
           padding: 24px 24px 64px 48px;
@@ -128,7 +132,10 @@
     dt.collapsed + dd {
       height: 0;
       overflow: hidden;
-      transition: height 200ms ease;
+      span {
+        opacity: 0;
+        transform: translateY(-32px);
+      }
     }
     div {
       text-align: center;
