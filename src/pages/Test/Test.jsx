@@ -69,7 +69,7 @@ const Test = (props) => {
                 <>
                   <span className={ styles.title }>Learn your possible additional income.</span>
                   <span className={ styles.title }>
-                    If you capture half, you potential additional income is<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200) }</b> per month
+                    If you capture half, your potential additional income is<br /><b>{ curr((parseInt(answers[1]) / 2) * 3200) }</b> per month
                     <br />
                     <br />
                     <br />
