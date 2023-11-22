@@ -5,13 +5,12 @@ import styles from './About.module.scss';
 import Separator from 'components/Separator/Separator';
 
 const About = (props) => {
-
   let [css, setCss] = useState({});
 
   useEffect((props) => {
+    // let challenges = document.querySelector('#challenges ul');
     // window.addEventListener('scroll', (evt) => {
-    //   let challenges = document.querySelector('#challenges');
-    //   getScrollPercentage(challenges);
+      // getScrollPercentage(challenges);
     // });
   }, []);
 
@@ -22,16 +21,19 @@ const About = (props) => {
     const elTop = el.offsetTop;
     const elHeight = el.offsetHeight;
     const p = ((windowScroll - elTop + windowHeight) / elHeight * 100).toFixed(1);
+    console.log(p)
     if (p < 0 || p > 100) {
       return null;
     } else {
-      const bgSize = p + '%';
-      const bgPosition = 'center ' + p  + '%';
+      // const bgSize = p + 50 + '%';
+      // const bgPosition = 'center ' + p  + '%';
+      const bgPosition = 'center ' + (p - 20)  + '%';
       setCss({
-        'backgroundSize': bgSize,
+        // 'backgroundSize': bgSize,
         'backgroundPosition': bgPosition
       });
       console.log(el.id + ': ' + p);
+      console.log(css);
       return el.id + ': ' + p;
     }
   };
@@ -81,6 +83,7 @@ const About = (props) => {
             <li><span>We think subprime deals require a large down payment and have a long booking time...</span></li>
             <li><span>Our business is small and does not have a dedicated special finance team...</span></li>
             <li><span>We do not see any significant financial benefits for our business in catering specifically to subprime customers...</span></li>
+            <li></li>
           </ul>
           <h1>We Can Solve Your Problems with <u>Our Innovative Process!</u></h1>
       </div>
