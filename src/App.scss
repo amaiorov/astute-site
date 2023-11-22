@@ -7,7 +7,9 @@ body {
   font-weight: 700;
   font-size: 20px;
   &.no-scroll {
-    overflow: hidden;
+    @media only screen and (max-width: $break-small) {
+      overflow: hidden;
+    }
   }
 }
 #root {

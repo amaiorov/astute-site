@@ -20,7 +20,11 @@ const Contact = (props) => {
         item.classList.add(styles.error);
         errors++;
         if (!scrolled) {
-          item.nextSibling.scrollIntoView({ behavior: 'smooth' });
+          let el = item.nextSibling;
+          let pos = el.getBoundingClientRect().top + window.pageYOffset - 140;
+          window.scrollTo({ top: pos, behavior: 'smooth' });
+
+          // item.nextSibling.scrollIntoView({ behavior: 'smooth' });
           scrolled = true;
         }
       } else {
@@ -49,36 +53,36 @@ const Contact = (props) => {
           </>
         }
         <form>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <input required type="text" id="first-name" />
               <label htmlFor="first-name">First Name</label>
             </div>
-            <div className={ styles.col }>
+            <div>
               <input required type="text" id="last-name" />
               <label htmlFor="last-name">Last Name</label>
             </div>
           </div>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <input required type="text" id="e-mail" />
               <label htmlFor="e-mail">E-mail</label>
             </div>
           </div>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <input required type="text" id="organiztion" />
               <label htmlFor="organiztion">Organization</label>
             </div>
           </div>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <input type="text" id="phone" />
               <label htmlFor="phone">Phone</label>
             </div>
           </div>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <select id="source">
                 <option name="Internet search">Internet Search</option>
                 <option name="Word of mouth">Word of Mouth</option>
@@ -87,8 +91,8 @@ const Contact = (props) => {
               <label htmlFor="source">How did you find us?</label>
             </div>
           </div>
-          <div className={ styles.grid }>
-            <div className={ styles.col }>
+          <div className={ styles.row }>
+            <div>
               <textarea required name="inquiry" id="inquiry"></textarea>
               <label htmlFor="inquiry">Inquiry</label>
             </div>

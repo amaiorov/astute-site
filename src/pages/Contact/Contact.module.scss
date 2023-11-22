@@ -17,14 +17,14 @@
     margin-bottom: 130px;
   }
   form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
     max-width: 850px;
     max-height: 1340px;
     margin: 0 auto;
-    margin-top: -140px;
-    overflow: hidden;
+    margin-top: -40px;
+    // overflow: hidden;
     transition: $ease-200;
     @media only screen and (max-width: $break-medium) {
       width: 100%;
@@ -34,30 +34,48 @@
     &.collapsed {
       max-height: 0;
     }
-    .grid {
+    .row {
+      // border: 1px solid red;
       width: 100%;
       display: flex;
-      flex-direction: row;
-      margin-bottom: 60px;
+      // margin-bottom: 60px;
       @media only screen and (max-width: $break-small) {
         flex-wrap: wrap;
-        margin-bottom: 0;
+        // margin-bottom: 0;
+      }
+      > div {
+        position: relative;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-top: 32px;
+        &:first-child {
+          padding-right: 32px;
+        }
+        &:last-child {
+          padding-right: 0px;
+        }
+        @media only screen and (max-width: $break-small) {
+          padding-right: 0 !important;
+        }
+        // flex-basis: 100%;
+        // border: 1px solid red;
       }
       .col {
-        flex-grow: 1;
-        position: relative;
-        padding-top: 24px;
+
+        // flex-grow: 1;
+        // position: relative;
+        // padding-top: 24px;
         @media only screen and (max-width: $break-small) {
-          margin-bottom: 60px;
+          // margin-bottom: 60px;
         }
         &:first-child {
-          margin-right: 32px;
+          // margin-right: 32px;
           @media only screen and (max-width: $break-small) {
-            margin-right: 0;
+            // margin-right: 0;
           }
         }
         &:last-child {
-          margin-right: 0;
+          // margin-right: 0;
         }
       }
     }
@@ -71,10 +89,11 @@
       background: transparent;
       font-size: 20px;
       padding: 14px 32px;
-      position: relative;
-      top: 140px;
+      // position: relative;
+      // top: 40px;
+      margin-top: 32px;
       @media only screen and (max-width: $break-medium) {
-        top: 64px;
+        // top: 64px;
       }
       &[required] {
         + label:after {
@@ -101,10 +120,11 @@
     label {
       position: absolute;
       top: 0;
+      left: 0;
       font-size: 16px;
-      padding-top: 140px;
+      // padding-top: 140px;
       @media only screen and (max-width: $break-medium) {
-        padding-top: 64px;
+        // padding-top: 64px;
       }
       &[for="source"] {
         width: 100%;
@@ -117,8 +137,8 @@
           background-position: 0 0;
           background-size: 100% auto;
           position: absolute;
-          top: 112px;
-          right: 32px;
+          top: 54px;
+          right: 16px;
           width: 24px;
           height: 24px;
         }
