@@ -10,6 +10,11 @@
     h1 {
       text-align: center;
       margin-bottom: 48px;
+      u {
+        @media only screen and (max-width: $break-medium) {
+          display: block;
+        }
+      }
     }
     p {
       text-align: center;
@@ -39,10 +44,11 @@
           box-sizing: border-box;
           padding: 50px 32px 96px;
         }
-        @media only screen and (max-width: $break-xsmall) {
+        @media only screen and (max-width: $break-small) {
           width: 100%;
           padding: 150px 0 120px;
           background-size: auto 30vw;
+          margin-bottom: 32px;
         }
         &.consulting {
           background-image: url('~assets/images/icon-consulting.svg');
@@ -94,6 +100,11 @@
     h1 {
       text-align: center;
       margin-bottom: 125px;
+      u {
+          @media only screen and (max-width: $break-medium) {
+            display: block;
+          }
+        }
     }
     ul {
       background-position: 50% 58%;
@@ -169,6 +180,9 @@
           left: 32px;
           width: calc(100% - 64px) !important;
           height: 22vh;
+          &:last-child {
+            margin-bottom: 64px !important;
+          }
         }
         &:first-child {
           width: 100%;

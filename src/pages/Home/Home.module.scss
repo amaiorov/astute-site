@@ -23,6 +23,10 @@
     @media only screen and (max-width: $break-large) {
       font-size: 32px;
     }
+    @media only screen and (max-width: $break-small) {
+      font-size: 30px;
+      line-height: 36px;
+    }
     &:last-of-type {
       margin-bottom: 80px;
     }

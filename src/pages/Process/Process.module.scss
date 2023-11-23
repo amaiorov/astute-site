@@ -66,13 +66,13 @@
           background-size: auto 60vw;
           .subtitle {
             span {
-              margin-top: 80vw;
+              margin-top: 90vw;
             }
           }
         }
-        @media only screen and (max-width: $break-medium) {
+        @media only screen and (max-width: $break-small) {
           background-position: 50% 400px;
-          background-size: auto 50vw;
+          background-size: 100% auto;
         }
       }
       &:nth-child(2) {
@@ -95,13 +95,13 @@
           background-size: auto 60vw;
           .subtitle {
             span {
-              margin-top: 80vw;
+              margin-top: 90vw;
             }
           }
         }
-        @media only screen and (max-width: $break-medium) {
+        @media only screen and (max-width: $break-small) {
           background-position: 50% 450px;
-          background-size: auto 50vw;
+          background-size: 100% auto;
         }
       }
       &:nth-child(3) {
@@ -118,13 +118,13 @@
           background-size: auto 60vw;
           .subtitle {
             span {
-              margin-top: 80vw;
+              margin-top: 90vw;
             }
           }
         }
-        @media only screen and (max-width: $break-medium) {
+        @media only screen and (max-width: $break-small) {
           background-position: 50% 370px;
-          background-size: auto 50vw;
+          background-size: 100% auto;
         }
       }
       .tag {
