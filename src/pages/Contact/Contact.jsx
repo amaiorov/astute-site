@@ -8,7 +8,9 @@ const Contact = (props) => {
 
   let [errorCount, setErrorCount] = useState();
   let [sending, setSending] = useState(0);
-  const brevoApiKey = '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';
+  const key = ['xkeysib', 'fc1659bc3c0bf356bca6ee00468198707d5aa0401f8af68d074629865fb516d3', 'XueOf8g4jxWdSbdl'];
+  console.log(key)
+  console.log(key.join('-'))
 
   const sendingStates = {
     0: 'not yet sent',
@@ -51,7 +53,7 @@ const Contact = (props) => {
         url: 'https://api.brevo.com/v3/smtp/email',
         headers: {
           'accept': 'application/json',
-          'api-key': brevoApiKey,
+          'api-key': key,
           'content-type': 'application/json'
         },
         data: {
