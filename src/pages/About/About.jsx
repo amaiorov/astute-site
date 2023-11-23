@@ -14,29 +14,27 @@ const About = (props) => {
     // });
   }, []);
 
-  const getScrollPercentage = (el) => {
-    const windowScroll = window.pageYOffset;
-    const windowHeight = window.innerHeight;
-    // const about = document.querySelector('#about');
-    const elTop = el.offsetTop;
-    const elHeight = el.offsetHeight;
-    const p = ((windowScroll - elTop + windowHeight) / elHeight * 100).toFixed(1);
-    console.log(p)
-    if (p < 0 || p > 100) {
-      return null;
-    } else {
-      // const bgSize = p + 50 + '%';
-      // const bgPosition = 'center ' + p  + '%';
-      const bgPosition = 'center ' + (p - 20)  + '%';
-      setCss({
-        // 'backgroundSize': bgSize,
-        'backgroundPosition': bgPosition
-      });
-      console.log(el.id + ': ' + p);
-      console.log(css);
-      return el.id + ': ' + p;
-    }
-  };
+  // const getScrollPercentage = (el) => {
+  //   const windowScroll = window.pageYOffset;
+  //   const windowHeight = window.innerHeight;
+  //   // const about = document.querySelector('#about');
+  //   const elTop = el.offsetTop;
+  //   const elHeight = el.offsetHeight;
+  //   const p = ((windowScroll - elTop + windowHeight) / elHeight * 100).toFixed(1);
+  //   console.log(p)
+  //   if (p < 0 || p > 100) {
+  //     return null;
+  //   } else {
+  //     // const bgSize = p + 50 + '%';
+  //     // const bgPosition = 'center ' + p  + '%';
+  //     const bgPosition = 'center ' + (p - 20)  + '%';
+  //     setCss({
+  //       // 'backgroundSize': bgSize,
+  //       'backgroundPosition': bgPosition
+  //     });
+  //     return el.id + ': ' + p;
+  //   }
+  // };
 
   return (
     <>

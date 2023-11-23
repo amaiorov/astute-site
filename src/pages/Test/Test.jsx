@@ -19,7 +19,6 @@ const Test = (props) => {
   };
 
   const rotate = () => {
-    console.log(slide);
     if (slide + 1 === 3) {
       setSlide(0);
       setAnswers({});
